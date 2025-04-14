@@ -20,8 +20,8 @@
 }
 
 body {
-  background-color: #bed6de;
-  color: #df2d2d;
+  background-color: #e7dfd8;
+  color: #281f15;
 }
 
 
@@ -29,13 +29,13 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: #08293c;
+  background-color: #b7a99e;
   padding: 10px 0;
   margin-bottom: 20px;
 }
 
 nav a {
-  color: #ffffff;
+  color: #281f15;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
@@ -58,7 +58,7 @@ nav a:hover {
   border-radius: 8px;
   padding: 20px;
   margin: 10px 0;
-  background-color: #ffffff;
+  background-color: #b7a99e;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -75,6 +75,15 @@ nav a:hover {
   color: #666;
   margin-bottom: 15px;
 }
+
+.product-image {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
 
 /* .product-card button {
   padding: 8px 16px;
