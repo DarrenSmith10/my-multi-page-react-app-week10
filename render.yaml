@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: react-store
+    env: static
+    staticPublishPath: dist
+    buildCommand: npm install && npm run build
+    branch: main
