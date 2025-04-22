@@ -27,7 +27,7 @@ function Product() {
     <div className='product-card'>
       <h2>{product.name}</h2>
       
-      <p>{product.description}</p>
+      <p className="mb-4 text-gray-700">{product.description}</p>
         <div>
                   <img src={product.image} alt={product.name} />
         </div>

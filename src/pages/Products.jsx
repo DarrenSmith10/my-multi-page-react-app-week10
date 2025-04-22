@@ -15,6 +15,7 @@ function Products() {
         {products.map((product) => (
           <div key={product.id} className="product-card">
             <h2>{product.name}</h2>
+            <p className='text-gray-500 mb-2'>{product.description}</p>
             <p>Price: £{product.price}</p>
             <div>
               <img className='product-image' src={product.image} alt={product.name} />
