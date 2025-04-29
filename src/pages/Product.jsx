@@ -26,14 +26,24 @@ function Product() {
   return (
     <div className='product-card'>
       <h2>{product.name}</h2>
+      {product.badge && (
+  <div className="badge badge-success text-white mb-2">{product.badge}</div>
+)}
+
+<p className="text-gray-600 mb-2">{product.longDescription}</p>
       
-      <p className="mb-4 text-gray-700">{product.description}</p>
         <div>
                   <img src={product.image} alt={product.name} />
         </div>
       <p>Price: £{product.price}</p>
       <button onClick={() => addToBasket(product)} class = "btn btn-primary">Add to Basket</button>
       <button onClick={() => removeFromBasket(product)} class = "btn btn-primary">Remove from Basket</button>
+
+      {product.tags.map(tag => (
+    <span key={tag} className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
+      #{tag}
+    </span>
+  ))}
     </div>
   );
 }
