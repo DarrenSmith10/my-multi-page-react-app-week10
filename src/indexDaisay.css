@@ -150,3 +150,10 @@ button:focus-visible {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
+.product-card .product-card-image {
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-card-image {
+  transform: scale(1.05);
+}
